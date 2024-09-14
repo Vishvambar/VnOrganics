@@ -4,11 +4,13 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+
 }
 
 body {
     font-family: 'Arial', sans-serif;
     background-color: #1F2020;
+    caret-color: transparent;
 }
 
 /* Navigation bar styling */
@@ -25,6 +27,22 @@ nav {
     /* No need to set top position if using relative */
     z-index: auto;
     /* Ensure z-index is not affecting layout */
+}
+
+.cart-wrapper {
+    display: flex;
+    align-items: center;
+    color: white;
+    background-color: #45a049;
+    padding: 7px;
+    border-radius: 10px;
+}
+.cart-wrapper:hover{
+    transform: scale(1.04);
+    cursor: pointer;
+}
+.cart-wrapper svg {
+    margin-right: 10px;
 }
 
 .main-footer {
@@ -123,6 +141,7 @@ nav {
 /* Search bar styling */
 .search-bar {
     display: flex;
+    caret-color: black;
     gap: 10px;
 }
 
